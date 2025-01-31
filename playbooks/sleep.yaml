@@ -5,7 +5,7 @@
     async: 5
     poll: 0
     ansible.builtin.command:
-      cmd: sleep {{ time_to_sleep }} && echo awake
+      cmd: sleep {{ time_to_sleep }}
     register: sleeper
 
   - name: debug
