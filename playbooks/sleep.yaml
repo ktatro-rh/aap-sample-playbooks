@@ -8,5 +8,5 @@
       cmd: sleep {{ time_to_sleep }}
   - name: debug
     ansible.builtin.debug:
-      msg: "Hello World from {{ inventory_host }}"
+      msg: "Hello World from {{ inventory_hostname }}"
 
