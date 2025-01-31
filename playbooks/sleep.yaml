@@ -4,7 +4,6 @@
   - name: sleep using a passed in value to test async
     async: 5
     poll: 0
-    fork:
     ansible.builtin.command:
       cmd: sleep {{ time_to_sleep }}
   - name: debug
