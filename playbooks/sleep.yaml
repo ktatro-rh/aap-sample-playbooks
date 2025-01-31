@@ -4,9 +4,10 @@
   - name: sleep using a passed in value to test async
     async: 5
     poll: 0
+    fork:
     ansible.builtin.command:
-      cmd: sleep {{ time_to_sleep }} 
+      cmd: sleep {{ time_to_sleep }}
   - name: debug
     ansible.builtin.debug:
-      msg: "Hello World"
+      msg: "Hello World from {{ inventory_host }}"
 
